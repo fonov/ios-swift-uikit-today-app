@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A6A4F315296DA7C800259195 /* Remainder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4F314296DA7C800259195 /* Remainder.swift */; };
 		A6D2594E296D9641001D3DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D2594D296D9641001D3DE8 /* AppDelegate.swift */; };
 		A6D25950296D9641001D3DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D2594F296D9641001D3DE8 /* SceneDelegate.swift */; };
 		A6D25952296D9641001D3DE8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D25951296D9641001D3DE8 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A6A4F314296DA7C800259195 /* Remainder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remainder.swift; sourceTree = "<group>"; };
 		A6D2594A296D9641001D3DE8 /* UIkitPlay1gApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIkitPlay1gApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D2594D296D9641001D3DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D2594F296D9641001D3DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A6A4F312296DA74200259195 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A6A4F314296DA7C800259195 /* Remainder.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		A6D25941296D9641001D3DE8 = {
 			isa = PBXGroup;
 			children = (
@@ -56,6 +66,7 @@
 		A6D2594C296D9641001D3DE8 /* UIkitPlay1gApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6A4F312296DA74200259195 /* Models */,
 				A6D2594D296D9641001D3DE8 /* AppDelegate.swift */,
 				A6D2594F296D9641001D3DE8 /* SceneDelegate.swift */,
 				A6D25951296D9641001D3DE8 /* ViewController.swift */,
@@ -139,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6D25952296D9641001D3DE8 /* ViewController.swift in Sources */,
+				A6A4F315296DA7C800259195 /* Remainder.swift in Sources */,
 				A6D2594E296D9641001D3DE8 /* AppDelegate.swift in Sources */,
 				A6D25950296D9641001D3DE8 /* SceneDelegate.swift in Sources */,
 			);
