@@ -10,6 +10,8 @@
 		A6A4F315296DA7C800259195 /* Remainder.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4F314296DA7C800259195 /* Remainder.swift */; };
 		A6A4F317296EC71100259195 /* Date+Today.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4F316296EC71100259195 /* Date+Today.swift */; };
 		A6A4F31A296EDFC200259195 /* ReminderListViewController+DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4F319296EDFC200259195 /* ReminderListViewController+DataSource.swift */; };
+		A6A4F31D296FF45C00259195 /* ReminderDoneButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4F31C296FF45C00259195 /* ReminderDoneButton.swift */; };
+		A6A4F31F29700EE300259195 /* ReminderViewContoller+Actions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A4F31E29700EE300259195 /* ReminderViewContoller+Actions.swift */; };
 		A6D2594E296D9641001D3DE8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D2594D296D9641001D3DE8 /* AppDelegate.swift */; };
 		A6D25950296D9641001D3DE8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D2594F296D9641001D3DE8 /* SceneDelegate.swift */; };
 		A6D25952296D9641001D3DE8 /* ReminderListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6D25951296D9641001D3DE8 /* ReminderListViewController.swift */; };
@@ -22,6 +24,8 @@
 		A6A4F314296DA7C800259195 /* Remainder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Remainder.swift; sourceTree = "<group>"; };
 		A6A4F316296EC71100259195 /* Date+Today.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Today.swift"; sourceTree = "<group>"; };
 		A6A4F319296EDFC200259195 /* ReminderListViewController+DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderListViewController+DataSource.swift"; sourceTree = "<group>"; };
+		A6A4F31C296FF45C00259195 /* ReminderDoneButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReminderDoneButton.swift; sourceTree = "<group>"; };
+		A6A4F31E29700EE300259195 /* ReminderViewContoller+Actions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ReminderViewContoller+Actions.swift"; sourceTree = "<group>"; };
 		A6D2594A296D9641001D3DE8 /* UIkitPlay1gApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIkitPlay1gApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6D2594D296D9641001D3DE8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A6D2594F296D9641001D3DE8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,8 +61,17 @@
 			children = (
 				A6D25951296D9641001D3DE8 /* ReminderListViewController.swift */,
 				A6A4F319296EDFC200259195 /* ReminderListViewController+DataSource.swift */,
+				A6A4F31E29700EE300259195 /* ReminderViewContoller+Actions.swift */,
 			);
 			path = ListViewController;
+			sourceTree = "<group>";
+		};
+		A6A4F31B296FF41200259195 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A6A4F31C296FF45C00259195 /* ReminderDoneButton.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		A6D25941296D9641001D3DE8 = {
@@ -80,6 +93,7 @@
 		A6D2594C296D9641001D3DE8 /* UIkitPlay1gApp */ = {
 			isa = PBXGroup;
 			children = (
+				A6A4F31B296FF41200259195 /* Views */,
 				A6A4F312296DA74200259195 /* Models */,
 				A6D2594D296D9641001D3DE8 /* AppDelegate.swift */,
 				A6D2594F296D9641001D3DE8 /* SceneDelegate.swift */,
@@ -168,6 +182,8 @@
 				A6A4F31A296EDFC200259195 /* ReminderListViewController+DataSource.swift in Sources */,
 				A6A4F315296DA7C800259195 /* Remainder.swift in Sources */,
 				A6D2594E296D9641001D3DE8 /* AppDelegate.swift in Sources */,
+				A6A4F31F29700EE300259195 /* ReminderViewContoller+Actions.swift in Sources */,
+				A6A4F31D296FF45C00259195 /* ReminderDoneButton.swift in Sources */,
 				A6D25950296D9641001D3DE8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
