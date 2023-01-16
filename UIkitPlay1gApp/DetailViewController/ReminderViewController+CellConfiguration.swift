@@ -25,18 +25,27 @@ extension ReminderViewController {
   func titleConfiguration(for ceil: UICollectionViewListCell, with title: String?) -> TextFieldContentView.Configuration {
     var contentConfiguration = ceil.textFieldConfiguration()
     contentConfiguration.text = title
+    contentConfiguration.onChange = { [weak self] title in
+      self?.workingReminder.title = title
+    }
     return contentConfiguration
   }
 
   func notesConfiguration(for ceil: UICollectionViewListCell, with notes: String?) -> TextViewContentView.Configuration {
     var contentConfiguration = ceil.textViewConfiguration()
     contentConfiguration.text = notes
+    contentConfiguration.onChange = { [weak self] notes in
+      self?.workingReminder.notes = notes
+    }
     return contentConfiguration
   }
 
   func dateConfiguration(for ceil: UICollectionViewListCell, with date: Date) -> DatePickerContentView.Configuration {
     var contentConfiguration = ceil.datePickerConfiguration()
     contentConfiguration.date = date
+    contentConfiguration.onChange = { [weak self] date in
+      self?.workingReminder.dueDate = date
+    }
     return contentConfiguration
   }
 
