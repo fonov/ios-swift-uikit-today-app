@@ -22,10 +22,13 @@ class ReminderListViewController: UICollectionViewController {
     ReminderListStyle.future.name,
     ReminderListStyle.all.name,
   ])
+  var headerView: ProgressHeaderView?
 
   override func viewDidLoad() {
     super.viewDidLoad()
     // Do any additional setup after loading the view.
+
+    collectionView.backgroundColor = .systemGray2
 
     let listLayout = listLayout()
     collectionView.collectionViewLayout = listLayout
@@ -34,6 +37,11 @@ class ReminderListViewController: UICollectionViewController {
 
     dataSource = DataSource(collectionView: collectionView) { (cell: UICollectionView, indexPath: IndexPath, itemIdentifier: Reminder.ID) in
       return self.collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: itemIdentifier)
+    }
+
+    let headerRegistration = UICollectionView.SupplementaryRegistration(elementKind: ProgressHeaderView.elementKind, handler: supplementaryRegistrationHandler)
+    dataSource.supplementaryViewProvider = { supplementaryView, elementKind, indexPath in
+      return self.collectionView.dequeueConfiguredReusableSupplementary(using: headerRegistration, for: indexPath)
     }
 
     let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(didPressAddButton(_:)))
@@ -66,6 +74,7 @@ class ReminderListViewController: UICollectionViewController {
 
   func listLayout() -> UICollectionViewLayout {
     var listConfiguration = UICollectionLayoutListConfiguration(appearance: .grouped)
+    listConfiguration.headerMode = .supplementary
     listConfiguration.showsSeparators = false
     listConfiguration.trailingSwipeActionsConfigurationProvider = makeSwipeActions
     listConfiguration.backgroundColor = .clear
@@ -81,6 +90,10 @@ class ReminderListViewController: UICollectionViewController {
       completion(false)
     }
     return UISwipeActionsConfiguration(actions: [deleteAction])
+  }
+
+  func supplementaryRegistrationHandler(progressView: ProgressHeaderView, elementKind: String, indexPath: IndexPath) {
+    headerView = progressView
   }
 }
 
