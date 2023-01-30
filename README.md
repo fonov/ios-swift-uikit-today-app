@@ -13,11 +13,11 @@
 * Views Animation
 
 <p align="center">
-    <img src="./preview/images/1.png" width="414">
-    <img src="./preview/images/2.png" width="414">
+    <img src="./preview/images/1.png" width="360">
+    <img src="./preview/images/2.png" width="360">
 </p>
 
 <p align="center">
-    <img src="./preview/images/4.png" width="414">
-    <img src="./preview/images/3.png" width="414">
+    <img src="./preview/images/4.png" width="360">
+    <img src="./preview/images/3.png" width="360">
 </p>
